@@ -1,13 +1,13 @@
 import './App.css';
 import Hello from './hello';
 import Wrapper from './Wrapper';
-
+import Login from './Login';
 function App() {
   return(
-	<Wrapper>
-  		<Hello name="Seunggi" color="blue" isReal={true}/>
-  		<Hello/>
-	</Wrapper>
+	  <div>
+		<Login/>
+	  </div>
+
 	);
 }
 
