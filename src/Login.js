@@ -2,8 +2,8 @@ import React, {useState, useEffect} from "react";
 import axios from "axios";
 
 function Login() {
-	const [inputId, setInputId] = useState('');
-	const [inputPw, setInputPw] = useState('');
+	const [inputId, setInputId] = useState('id');
+	const [inputPw, setInputPw] = useState('password');
 
 	const handleInputId = (e) => {
 		setInputId(e.target.value)
@@ -39,22 +39,28 @@ function Login() {
 	[])
 
 	return(
-		<div>
-			  <h2>Login</h2>
-            <div>
-                <label htmlFor='input_id'>ID : </label>
-                <input type='text' name='input_id' value={inputId} onChange={handleInputId} />
-            </div>
-            <div>
-                <label htmlFor='input_pw'>PW : </label>
-                <input type='password' name='input_pw' value={inputPw} onChange={handleInputPw} />
-            </div>
-            <div>
-                <button type='button' onClick={onClickLogin}>Login</button>
-            </div>
-			<div>
-                <button type='button' onClick={onClickRegister}>Register</button>
-            </div>
+		<div class="row">
+			<div class="col-12" id="topbar"></div>
+			<div class="col-12 row" id="loginPageContent">
+				<div class="col-12">
+					<img id="birdLogo" src="img/birdhouse-logo.png"></img>
+				</div>
+				<div class="col-12" id="loginFormStyle">
+					<h2 id="loginTitle">Login</h2>
+				</div>
+				<div class="col-12" id="idForm">
+					<label htmlFor='input_id'></label>
+					<input type='text' name='input_id' value={inputId} onChange={handleInputId} />
+				</div>
+				<div class="col-12" id="pwForm">
+					<label htmlFor='input_pw'></label>
+					<input type='password' name='input_pw' value={inputPw} onChange={handleInputPw} />
+				</div>
+				<div class="col-12" id="loginButtonGroup">
+					<button id='loginButton'type='button' onClick={onClickLogin}>Login</button>
+					<button id='registerButton' type='button' onClick={onClickRegister}>Register</button>
+				</div>
+			</div>
 		</div>
 	)
 }

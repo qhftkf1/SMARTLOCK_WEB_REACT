@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#topbar{
+  background-color: #05AEFC;
+  height: 3rem;
+}
+#birdLogo{
+	width: 60%;
+	margin: 2rem 0 2rem 0;
+}
+#loginPageContent{
+	height: 100%;
+	text-align: center;
+}
+#loginTitle{
+	text-align: center;
+}
+#idForm{
+	text-align: center;
+}
+#pwForm{
+	text-align: center;
+}
+
+#loginButtonGroup{
+	text-align: center;
+}
+
+#loginButton{
+	margin: 1rem;
+	border: 0px;
+	background-color: #05AEFC ;
+	color: white;
+}
+
+#registerButton{
+	margin: 1rem;
+	border: 0px;
+	background-color: #05AEFC ;
+	color: white;
+}
